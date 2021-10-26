@@ -1,4 +1,4 @@
-package ru.netology.test;
+package ru.netology.data;
 
 import com.github.javafaker.Faker;
 import lombok.Data;
@@ -37,8 +37,6 @@ public class DataGenerator {
             return LocalDate.now().plusDays(plusDays).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         }
 
-        public static String getRescheduledDate(int plusDays) {
-            return LocalDate.now().plusDays(plusDays).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        }
+
     }
 }
